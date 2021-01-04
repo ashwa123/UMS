@@ -9,18 +9,31 @@ import { AuthService } from './auth.service';
 })
 
 export class AuthGuard implements CanActivate {
-
+  
+  /**
+   * It initialises the Auth guard
+   * @param router 
+   * @param authService 
+   */
   constructor(
     private router: Router,
     private authService: AuthService
     ) {}
 
+  /**
+   * method to check the activation of routes
+   * @param next 
+   * @param state 
+   */ 
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     return this.checkLoggedIn();
   }
 
+  /**
+   * function to check whether the user is logged in
+   */
   checkLoggedIn(): boolean {
     if (this.authService.isLoggedIn) {
       return true;

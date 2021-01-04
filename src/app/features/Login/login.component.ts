@@ -10,15 +10,26 @@ import { AuthService } from '../../core/Auth/auth.service';
 })
 export class LoginComponent implements OnInit {
 
+  /** Declares loginForm*/
   loginForm: FormGroup;
+  /**Eye icon for password */
   hide = true;
 
+  /**
+   * It initialises the component
+   * @param formBuilder 
+   * @param router 
+   * @param authService 
+   */
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
     private authService: AuthService
   ) { }
 
+  /**
+   * It initialises the loginform and calls getAllUser function
+   */
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
       username: ['', [Validators.required]],
@@ -27,10 +38,16 @@ export class LoginComponent implements OnInit {
     this.getAllUser();
   }
 
+  /**
+   * function to get all the users from the server
+   */
   getAllUser(): void {
     this.authService.getAllUser();
   }
 
+  /**
+   * function to login user
+   */
   login(): void {
     this.authService.login(this.loginForm.value.username, this.loginForm.value.password)
     if (this.authService.isLoggedIn) {

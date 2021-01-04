@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "api": "json-server api/db.json --routes api/routes.json --no-cors=true",
-    "compodoc": "npx compodoc -p tsconfig.app.json src"
+    "compodoc": "npx compodoc -p tsconfig.json src"
     
   },
   "private": true,

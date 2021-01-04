@@ -10,17 +10,24 @@ import { AuthService } from '../../core/Auth/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
+  /**Declares variable for logged in user */
   currentUser: any;
 
+  /**
+   * It initialises the nav bar component
+   * @param authService 
+   * @param router 
+   */
   constructor(
     private authService: AuthService,
     private router: Router
     ) { }
 
+  /**stores the logged in user in current user variable */
   ngOnInit(): void {
     this.currentUser = this.authService.currentUser;
   }
-
+  /**Function for log out */
   logout(): void {
     this.authService.currentUser = null;
     this.router.navigate(['/login'])

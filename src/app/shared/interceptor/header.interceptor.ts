@@ -11,12 +11,21 @@ import { AuthService } from 'src/app/core/Auth/auth.service';
 @Injectable()
 export class HeaderInterceptor implements HttpInterceptor {
 
+  /**
+   * It initialises the http interceptor
+   * @param authService 
+   */
   constructor(
     private authService: AuthService
   ) {}
 
+  /**
+   * Method to pass the username of the logged in user in request header
+   * @param request 
+   * @param next 
+   */
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    let username = this.authService.currentUser?.username
+    const username = this.authService.currentUser?.username
     if (username) {
       request = request.clone({
         setHeaders: {

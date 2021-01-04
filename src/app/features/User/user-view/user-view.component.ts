@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
@@ -9,19 +10,29 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class UserViewComponent implements OnInit {
 
+  /**Declares user update form */
   userviewForm: FormGroup;
+  /**avatar image variable declaration */
   avatarImg = '../../../../assets/avatar.png';
 
+  /**
+   * It initialises user view component
+   * @param formBuilder 
+   * @param dialogRef 
+   * @param data 
+   */
   constructor(
     private formBuilder: FormBuilder,
     public dialogRef: MatDialogRef<UserViewComponent>,
     @Inject(MAT_DIALOG_DATA) public data
   ) { }
 
+  /**Initialise the user view form */
   ngOnInit(): void {
     this.userviewform()
   }
 
+  /**Initialise the user view form */
   userviewform(): void {
     this.userviewForm = this.formBuilder.group({
       empId: [this.data.user?.empId ? this.data.user.empId : ''],

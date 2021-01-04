@@ -1,0 +1,1595 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ums documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ums documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>UserDetailComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/features/User/user-detail/user-detail.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-user-detail</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./user-detail.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./user-detail.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#avatarImg">avatarImg</a>
+                            </li>
+                            <li>
+                                <a href="#currentUser">currentUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog">dialog</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#isAdmin">isAdmin</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                <a href="#userdetails">userdetails</a>
+                            </li>
+                            <li>
+                                <a href="#userdetailsList">userdetailsList</a>
+                            </li>
+                            <li>
+                                <a href="#userEdit">userEdit</a>
+                            </li>
+                            <li>
+                                <a href="#userForm">userForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#add">add</a>
+                            </li>
+                            <li>
+                                <a href="#delete">delete</a>
+                            </li>
+                            <li>
+                                <a href="#edit">edit</a>
+                            </li>
+                            <li>
+                                <a href="#getallUser">getallUser</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#paginate">paginate</a>
+                            </li>
+                            <li>
+                                <a href="#save">save</a>
+                            </li>
+                            <li>
+                                <a href="#userDataForm">userDataForm</a>
+                            </li>
+                            <li>
+                                <a href="#view">view</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(authService: <a href="../injectables/AuthService.html">AuthService</a>, userService: <a href="../injectables/UserDetailService.html">UserDetailService</a>, dialog: MatDialog, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>It initialises the user detail component</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserDetailService.html" target="_self" >UserDetailService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="add"></a>
+                    <span class="name">
+                        <b>
+                            add
+                        </b>
+                        <a href="#add"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>add()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function to open the EditUserComponent in a dialog box </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delete"></a>
+                    <span class="name">
+                        <b>
+                            delete
+                        </b>
+                        <a href="#delete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>delete(row: unknown)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="130"
+                            class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function to delete the user </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                            <code>unknown</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="edit"></a>
+                    <span class="name">
+                        <b>
+                            edit
+                        </b>
+                        <a href="#edit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>edit(user: unknown)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function to open the EditUserComponent in a dialog box </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                            <code>unknown</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getallUser"></a>
+                    <span class="name">
+                        <b>
+                            getallUser
+                        </b>
+                        <a href="#getallUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getallUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>function to get all the users from the server</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Defines the current user and initialises the user update form and calls getAllUser function</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginate"></a>
+                    <span class="name">
+                        <b>
+                            paginate
+                        </b>
+                        <a href="#paginate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>paginate(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function to define the pagination</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="save"></a>
+                    <span class="name">
+                        <b>
+                            save
+                        </b>
+                        <a href="#save"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>save()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function to update the user details </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userDataForm"></a>
+                    <span class="name">
+                        <b>
+                            userDataForm
+                        </b>
+                        <a href="#userDataForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>userDataForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialises the user update form </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="view"></a>
+                    <span class="name">
+                        <b>
+                            view
+                        </b>
+                        <a href="#view"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>view(user: unknown)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function to open the UserViewComponent in a dialog box </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                            <code>unknown</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="avatarImg"></a>
+                        <span class="name">
+                            <b>
+                            avatarImg</b>
+                            <a href="#avatarImg"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;../../../../assets/avatar.png&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>avatar image variable declaration </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUser"></a>
+                        <span class="name">
+                            <b>
+                            currentUser</b>
+                            <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Declares variable for logged in user </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialog"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialog</b>
+                            <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatDialog</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;empId&#x27;, &#x27;name&#x27;, &#x27;username&#x27;, &#x27;email&#x27;, &#x27;phone&#x27;, &#x27;edit&#x27;, &#x27;delete&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Table column variable declaration </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAdmin"></a>
+                        <span class="name">
+                            <b>
+                            isAdmin</b>
+                            <a href="#isAdmin"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Variable declaration to check whether the logged in user is admin </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator</b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatPaginator</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatPaginator)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userdetails"></a>
+                        <span class="name">
+                            <b>
+                            userdetails</b>
+                            <a href="#userdetails"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>UserData[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Variable declaration to store all the users</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userdetailsList"></a>
+                        <span class="name">
+                            <b>
+                            userdetailsList</b>
+                            <a href="#userdetailsList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>any[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Table column variable declaration </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userEdit"></a>
+                        <span class="name">
+                            <b>
+                            userEdit</b>
+                            <a href="#userEdit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Variable declaration to decide to display or edit user</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userForm"></a>
+                        <span class="name">
+                            <b>
+                            userForm</b>
+                            <a href="#userForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/features/User/user-detail/user-detail.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>User form declaration </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import {MatDialog} from &#x27;@angular/material/dialog&#x27;;
+import { FormGroup, FormBuilder } from &#x27;@angular/forms&#x27;;
+import { MatPaginator } from &#x27;@angular/material/paginator&#x27;;
+
+import { AuthService } from &#x27;../../../core/Auth/auth.service&#x27;;
+import { UserDetailService } from &#x27;../../../shared/service/user-detail.service&#x27;;
+import { EditUserComponent } from &#x27;../edit-user/edit-user.component&#x27;;
+import { UserViewComponent } from &#x27;../user-view/user-view.component&#x27;;
+
+
+export interface UserData {
+  /**Employee Id of the user */
+  empId: any;
+  /**Name of the user */
+  name: string;
+  /**Email of the user */
+  email: string;
+  /**Phone number of the user */
+  phone: number;
+}
+
+@Component({
+  selector: &#x27;app-user-detail&#x27;,
+  templateUrl: &#x27;./user-detail.component.html&#x27;,
+  styleUrls: [&#x27;./user-detail.component.scss&#x27;]
+})
+export class UserDetailComponent implements OnInit {
+
+  /**Declares variable for logged in user */
+  currentUser: any;
+  /**Variable declaration to check whether the logged in user is admin */
+  isAdmin: boolean;
+  /**Variable declaration to store all the users*/
+  userdetails: UserData[];
+  /**Table column variable declaration */
+  displayedColumns &#x3D; [&#x27;empId&#x27;, &#x27;name&#x27;, &#x27;username&#x27;, &#x27;email&#x27;, &#x27;phone&#x27;, &#x27;edit&#x27;, &#x27;delete&#x27;];
+  /**avatar image variable declaration */
+  avatarImg &#x3D; &#x27;../../../../assets/avatar.png&#x27;;
+  /**User form declaration */
+  userForm: FormGroup;
+  /**Variable declaration to decide to display or edit user*/
+  userEdit &#x3D; false;
+  /**Table column variable declaration */
+  userdetailsList: any[];
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  
+  /**
+   * It initialises the user detail component
+   * @param authService 
+   * @param userService 
+   * @param dialog 
+   * @param formBuilder 
+   */
+  constructor(
+    private authService: AuthService,
+    private userService: UserDetailService,
+    public dialog: MatDialog,
+    private formBuilder: FormBuilder,
+    
+  ) { }
+
+  /**
+   * Defines the current user and initialises the user update form and calls getAllUser function
+   */
+  ngOnInit(): void {
+    this.currentUser &#x3D; this.authService.currentUser;
+    this.userDataForm();
+    this.getallUser();
+  }
+  
+  /**Initialises the user update form */
+  userDataForm(): void {
+    this.userForm &#x3D; this.formBuilder.group({
+      empId: [this.currentUser?.empId ? this.currentUser.empId : &#x27;&#x27;],
+      username: [this.currentUser?.username ? this.currentUser.empId : &#x27;&#x27;],
+      password: [this.currentUser?.password ? this.currentUser.password : &#x27;&#x27;],
+      name: [this.currentUser?.name ? this.currentUser.name : &#x27;&#x27;],
+      email: [this.currentUser?.email ? this.currentUser.email : &#x27;&#x27;],
+      phone: [this.currentUser?.phone ? this.currentUser.phone : &#x27;&#x27;]
+    });
+  }
+
+    /**
+   * function to get all the users from the server
+   */
+  getallUser(): void {
+    this.userService.getallUser().subscribe((users: any) &#x3D;&gt; {
+      this.userdetails &#x3D; users;
+      this.paginate({pageIndex: 0, pageSize: 5})
+    });
+  }
+
+  /**Function to open the EditUserComponent in a dialog box */
+  edit(user: unknown): void {
+    const dialogRef &#x3D; this.dialog.open(EditUserComponent, {
+      data: {user, isEdit: true}
+    });
+
+    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+      this.getallUser();
+    });
+  }
+
+  /**Function to open the UserViewComponent in a dialog box */
+  view(user: unknown): void {
+    const dialogRef &#x3D; this.dialog.open(UserViewComponent, {
+      data: {user}
+    });
+
+    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+      this.getallUser();
+    });
+  }
+
+  /**Function to open the EditUserComponent in a dialog box */
+  add(): void {
+    const dialogRef &#x3D; this.dialog.open(EditUserComponent, {
+      data: {isEdit: false}
+    });
+
+    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+      this.getallUser();
+    });
+  }
+
+  /**Function to delete the user */
+  delete(row: unknown): void {
+    confirm(&#x27;Are you sure you want to delete the record?&#x27;)
+    this.userService.deleteUser(row).subscribe(response &#x3D;&gt; {
+      if (response) {
+        this.getallUser();
+      } else {
+        console.log(&#x27;Unsuccessful&#x27;);
+      }
+    });
+  }
+
+  /**Function to update the user details */
+  save(): void {
+    this.userService.updateUser(this.userForm.value, this.currentUser.id).subscribe(response &#x3D;&gt; {
+      if (response) {
+        this.getallUser();
+        this.userEdit &#x3D; false;
+      }
+    });
+  }
+
+  
+  
+  /**
+   * Function to define the pagination
+   * @param event 
+   */
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  paginate(event) {
+    const startIndex &#x3D; event.pageIndex * event.pageSize;
+    let endIndex &#x3D; startIndex + event.pageSize;
+    if(endIndex &gt; this.userdetails){
+      endIndex &#x3D; this.userdetails;
+    }
+    this.userdetailsList &#x3D; this.userdetails.slice(startIndex, endIndex);
+  }
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-navbar&gt;&lt;/app-navbar&gt;
+
+&lt;section class&#x3D;&quot;add-button&quot;&gt;
+  &lt;div class&#x3D;&quot;action-container&quot; *ngIf &#x3D; &quot;currentUser?.isAdmin&quot;&gt;
+    &lt;button mat-raised-button color &#x3D;&quot;primary&quot; (click) &#x3D; &quot;add()&quot;&gt;+ Add User&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section *ngIf &#x3D; &quot;currentUser?.isAdmin&quot; class&#x3D;&quot;table-container&quot;&gt;
+    &lt;table mat-table [dataSource]&#x3D;&quot;userdetailsList&quot; class&#x3D;&quot;mat-elevation-z8&quot;&gt;
+
+      &lt;ng-container matColumnDef&#x3D;&quot;empId&quot;&gt;
+        &lt;th  mat-header-cell *matHeaderCellDef&gt; Employee ID &lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let user&quot;&gt;&lt;a (click) &#x3D; &quot;view(user)&quot;&gt;{{user.empId}}&lt;/a&gt;&lt;/td&gt;
+      &lt;/ng-container&gt;
+
+      &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef&gt; Name &lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let user&quot;&gt; {{user.name}} &lt;/td&gt;
+      &lt;/ng-container&gt;
+
+      &lt;ng-container matColumnDef&#x3D;&quot;username&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef&gt; Username &lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let user&quot;&gt; {{user.username}} &lt;/td&gt;
+      &lt;/ng-container&gt;
+        
+        &lt;ng-container matColumnDef&#x3D;&quot;email&quot;&gt;
+          &lt;th mat-header-cell *matHeaderCellDef&gt; Email &lt;/th&gt;
+          &lt;td mat-cell *matCellDef&#x3D;&quot;let user&quot;&gt; {{user.email}} &lt;/td&gt;
+        &lt;/ng-container&gt;
+
+        &lt;ng-container matColumnDef&#x3D;&quot;phone&quot;&gt;
+          &lt;th mat-header-cell *matHeaderCellDef&gt; Phone Number &lt;/th&gt;
+          &lt;td mat-cell *matCellDef&#x3D;&quot;let user&quot;&gt; {{user.phone}} &lt;/td&gt;
+        &lt;/ng-container&gt;
+
+        &lt;ng-container matColumnDef&#x3D;&quot;edit&quot;&gt; 
+          &lt;th mat-header-cell  *matHeaderCellDef&gt; Edit &lt;/th&gt;
+          &lt;td mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt;
+            &lt;button mat-icon-button aria-label&#x3D;&quot;false&quot; (click) &#x3D; &#x27;edit(row)&#x27;&gt;
+              &lt;mat-icon&gt;edit&lt;/mat-icon&gt;
+            &lt;/button&gt;
+        &lt;/ng-container&gt;
+
+        &lt;ng-container matColumnDef&#x3D;&quot;delete&quot;&gt; 
+          &lt;th mat-header-cell  *matHeaderCellDef&gt; Delete &lt;/th&gt;
+          &lt;td mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt;
+            &lt;button mat-icon-button aria-label&#x3D;&quot;false&quot; (click) &#x3D; &#x27;delete(row)&#x27;&gt;
+              &lt;mat-icon&gt;delete&lt;/mat-icon&gt;
+            &lt;/button&gt;
+        &lt;/ng-container&gt;
+    
+        &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/tr&gt;
+        &lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;div class&#x3D;&quot;paginate-container&quot;&gt;
+      &lt;mat-paginator [length]&#x3D;&quot;userdetails?.length&quot;
+                      [pageSize]&#x3D;&quot;5&quot;
+                      [pageSizeOptions]&#x3D;&quot;[5, 10, 15, 20]&quot; (page)&#x3D;&quot;paginate($event)&quot;&gt;&lt;/mat-paginator&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+
+&lt;section class&#x3D;&quot;user-card&quot; *ngIf &#x3D; &quot;!currentUser?.isAdmin&quot;&gt;
+  &lt;mat-card class&#x3D;&quot;card-width mat-elevation-z8&quot;&gt;
+    &lt;div class&#x3D;&quot;profile-container&quot;&gt;
+      &lt;img [src] &#x3D; &quot;avatarImg&quot; height&#x3D;&quot;150px&quot; width&#x3D;&quot;150px&quot;&gt;
+      &lt;button mat-icon-button aria-label&#x3D;&quot;false&quot; (click) &#x3D; &quot;userEdit &#x3D; true&quot;&gt;
+        &lt;mat-icon&gt;edit&lt;/mat-icon&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;form [formGroup] &#x3D; &quot;userForm&quot;&gt;
+
+        &lt;mat-form-field class &#x3D; &quot;input-field&quot; [appearance] &#x3D; &quot;userEdit ? &#x27;standard&#x27; : &#x27;none&#x27;&quot;&gt;
+          &lt;mat-label class&#x3D;&quot;font-size&quot;&gt;&lt;b&gt;Employee ID&lt;/b&gt;&lt;/mat-label&gt;
+          &lt;input matInput formControlName&#x3D;&quot;empId&quot; readonly&gt;
+        &lt;/mat-form-field&gt;
+
+        &lt;mat-form-field class &#x3D; &quot;input-field&quot; [appearance] &#x3D; &quot;userEdit ? &#x27;standard&#x27; : &#x27;none&#x27;&quot;&gt;
+          &lt;mat-label class&#x3D;&quot;font-size&quot;&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/mat-label&gt;
+          &lt;input matInput formControlName&#x3D;&quot;name&quot; [readonly] &#x3D; &quot;!userEdit&quot;&gt;
+        &lt;/mat-form-field&gt;
+
+        &lt;mat-form-field class &#x3D; &quot;input-field&quot; appearance &#x3D; &quot;none&quot;&gt;
+          &lt;mat-label class&#x3D;&quot;font-size&quot;&gt;&lt;b&gt;Username&lt;/b&gt;&lt;/mat-label&gt;
+          &lt;input matInput formControlName&#x3D;&quot;username&quot; readonly&gt;
+        &lt;/mat-form-field&gt;
+
+        &lt;mat-form-field class &#x3D; &quot;input-field&quot; [appearance] &#x3D; &quot;userEdit ? &#x27;standard&#x27; : &#x27;none&#x27;&quot;&gt;
+          &lt;mat-label class&#x3D;&quot;font-size&quot;&gt;&lt;b&gt;Email&lt;/b&gt;&lt;/mat-label&gt;
+          &lt;input matInput formControlName&#x3D;&quot;email&quot;&gt;
+        &lt;/mat-form-field&gt;
+
+        &lt;mat-form-field class &#x3D; &quot;input-field&quot; [appearance] &#x3D; &quot;userEdit ? &#x27;standard&#x27; : &#x27;none&#x27;&quot;&gt;
+          &lt;mat-label class&#x3D;&quot;font-size&quot;&gt;&lt;b&gt;Phone Number&lt;/b&gt;&lt;/mat-label&gt;
+          &lt;input matInput formControlName&#x3D;&quot;phone&quot;&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/form&gt;
+
+      &lt;div class&#x3D;&quot;button-container&quot; *ngIf &#x3D; &quot;userEdit&quot;&gt;
+        &lt;button mat-raised-button color &#x3D; &quot;primary&quot; (click) &#x3D; &quot;save()&quot;&gt;Save&lt;/button&gt;
+        &lt;button mat-raised-button color &#x3D; &quot;secondary&quot; class&#x3D;&quot;button-margin&quot; (click) &#x3D; &quot;userEdit &#x3D; false&quot;&gt;Cancel&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/mat-card&gt;
+&lt;/section&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./user-detail.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">table {
+    width: 100%;
+  }
+
+  .table-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
+  }
+
+  .user-card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .card-width{
+    width: 500px;
+  }
+
+  .data-alignment{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .profile-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-container{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .button-margin{
+    margin-left: 20px;
+  }
+
+  .add-button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px;
+  }
+
+  .paginate-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.font-size {
+  font-size: larger;
+}
+
+.paginate-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-navbar></app-navbar><section class="add-button">  <div class="action-container" *ngIf = "currentUser?.isAdmin">    <button mat-raised-button color ="primary" (click) = "add()">+ Add User</button>  </div></section><section *ngIf = "currentUser?.isAdmin" class="table-container">    <table mat-table [dataSource]="userdetailsList" class="mat-elevation-z8">      <ng-container matColumnDef="empId">        <th  mat-header-cell *matHeaderCellDef> Employee ID </th>        <td mat-cell *matCellDef="let user"><a (click) = "view(user)">{{user.empId}}</a></td>      </ng-container>      <ng-container matColumnDef="name">        <th mat-header-cell *matHeaderCellDef> Name </th>        <td mat-cell *matCellDef="let user"> {{user.name}} </td>      </ng-container>      <ng-container matColumnDef="username">        <th mat-header-cell *matHeaderCellDef> Username </th>        <td mat-cell *matCellDef="let user"> {{user.username}} </td>      </ng-container>                <ng-container matColumnDef="email">          <th mat-header-cell *matHeaderCellDef> Email </th>          <td mat-cell *matCellDef="let user"> {{user.email}} </td>        </ng-container>        <ng-container matColumnDef="phone">          <th mat-header-cell *matHeaderCellDef> Phone Number </th>          <td mat-cell *matCellDef="let user"> {{user.phone}} </td>        </ng-container>        <ng-container matColumnDef="edit">           <th mat-header-cell  *matHeaderCellDef> Edit </th>          <td mat-cell *matCellDef="let row">            <button mat-icon-button aria-label="false" (click) = \'edit(row)\'>              <mat-icon>edit</mat-icon>            </button>        </ng-container>        <ng-container matColumnDef="delete">           <th mat-header-cell  *matHeaderCellDef> Delete </th>          <td mat-cell *matCellDef="let row">            <button mat-icon-button aria-label="false" (click) = \'delete(row)\'>              <mat-icon>delete</mat-icon>            </button>        </ng-container>            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>    </table>    <div class="paginate-container">      <mat-paginator [length]="userdetails?.length"                      [pageSize]="5"                      [pageSizeOptions]="[5, 10, 15, 20]" (page)="paginate($event)"></mat-paginator>    </div></section><section class="user-card" *ngIf = "!currentUser?.isAdmin">  <mat-card class="card-width mat-elevation-z8">    <div class="profile-container">      <img [src] = "avatarImg" height="150px" width="150px">      <button mat-icon-button aria-label="false" (click) = "userEdit = true">        <mat-icon>edit</mat-icon>      </button>    </div>    <div>      <form [formGroup] = "userForm">        <mat-form-field class = "input-field" [appearance] = "userEdit ? \'standard\' : \'none\'">          <mat-label class="font-size"><b>Employee ID</b></mat-label>          <input matInput formControlName="empId" readonly>        </mat-form-field>        <mat-form-field class = "input-field" [appearance] = "userEdit ? \'standard\' : \'none\'">          <mat-label class="font-size"><b>Name</b></mat-label>          <input matInput formControlName="name" [readonly] = "!userEdit">        </mat-form-field>        <mat-form-field class = "input-field" appearance = "none">          <mat-label class="font-size"><b>Username</b></mat-label>          <input matInput formControlName="username" readonly>        </mat-form-field>        <mat-form-field class = "input-field" [appearance] = "userEdit ? \'standard\' : \'none\'">          <mat-label class="font-size"><b>Email</b></mat-label>          <input matInput formControlName="email">        </mat-form-field>        <mat-form-field class = "input-field" [appearance] = "userEdit ? \'standard\' : \'none\'">          <mat-label class="font-size"><b>Phone Number</b></mat-label>          <input matInput formControlName="phone">        </mat-form-field>      </form>      <div class="button-container" *ngIf = "userEdit">        <button mat-raised-button color = "primary" (click) = "save()">Save</button>        <button mat-raised-button color = "secondary" class="button-margin" (click) = "userEdit = false">Cancel</button>      </div>    </div>  </mat-card></section></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditUserComponent', 'selector': 'app-edit-user'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'UserDetailComponent', 'selector': 'app-user-detail'},{'name': 'UserViewComponent', 'selector': 'app-user-view'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'UserDetailComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserDetailComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
