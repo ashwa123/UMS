@@ -1,0 +1,21 @@
+.form-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 24px;
+}
+
+.heading-container{
+    text-align: center;
+}
+
+.button-conatiner{
+    margin-top: 8px;
+}

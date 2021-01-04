@@ -1,0 +1,35 @@
+
+<section class="form-container">
+    <form [formGroup]='updateForm' class="field-container">
+
+        <mat-form-field>
+            <mat-label>Employee ID</mat-label>
+            <input matInput type="text" formControlName="empId">
+        </mat-form-field>
+
+        <mat-form-field *ngIf = "CurrentUser.isAdmin">
+            <mat-label>Username</mat-label>
+            <input matInput type="text" formControlName="username">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput type="email" formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Phone Number</mat-label>
+            <input matInput type="number" formControlName="phone">
+        </mat-form-field>
+
+        <div>
+            <button class="button-conatiner" mat-flat-button color="primary" (click)="addOrEdit()">{{data?.isEdit ? "Update" : "Add"}}</button>
+        </div>
+    </form>
+</section>
+

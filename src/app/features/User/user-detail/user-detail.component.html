@@ -1,0 +1,109 @@
+<app-navbar></app-navbar>
+
+<section class="add-button">
+  <div class="action-container" *ngIf = "currentUser?.isAdmin">
+    <button mat-raised-button color ="primary" (click) = "add()">+ Add User</button>
+  </div>
+</section>
+
+<section *ngIf = "currentUser?.isAdmin" class="table-container">
+    <table mat-table [dataSource]="userdetailsList" class="mat-elevation-z8">
+
+      <ng-container matColumnDef="empId">
+        <th  mat-header-cell *matHeaderCellDef> Employee ID </th>
+        <td mat-cell *matCellDef="let user"><a (click) = "view(user)">{{user.empId}}</a></td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let user"> {{user.name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="username">
+        <th mat-header-cell *matHeaderCellDef> Username </th>
+        <td mat-cell *matCellDef="let user"> {{user.username}} </td>
+      </ng-container>
+        
+        <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef> Email </th>
+          <td mat-cell *matCellDef="let user"> {{user.email}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="phone">
+          <th mat-header-cell *matHeaderCellDef> Phone Number </th>
+          <td mat-cell *matCellDef="let user"> {{user.phone}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="edit"> 
+          <th mat-header-cell  *matHeaderCellDef> Edit </th>
+          <td mat-cell *matCellDef="let row">
+            <button mat-icon-button aria-label="false" (click) = 'edit(row)'>
+              <mat-icon>edit</mat-icon>
+            </button>
+        </ng-container>
+
+        <ng-container matColumnDef="delete"> 
+          <th mat-header-cell  *matHeaderCellDef> Delete </th>
+          <td mat-cell *matCellDef="let row">
+            <button mat-icon-button aria-label="false" (click) = 'delete(row)'>
+              <mat-icon>delete</mat-icon>
+            </button>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <div class="paginate-container">
+      <mat-paginator [length]="userdetails?.length"
+                      [pageSize]="5"
+                      [pageSizeOptions]="[5, 10, 15, 20]" (page)="paginate($event)"></mat-paginator>
+    </div>
+</section>
+
+
+<section class="user-card" *ngIf = "!currentUser?.isAdmin">
+  <mat-card class="card-width mat-elevation-z8">
+    <div class="profile-container">
+      <img [src] = "avatarImg" height="150px" width="150px">
+      <button mat-icon-button aria-label="false" (click) = "userEdit = true">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+
+    <div>
+      <form [formGroup] = "userForm">
+
+        <mat-form-field class = "input-field" [appearance] = "userEdit ? 'standard' : 'none'">
+          <mat-label class="font-size"><b>Employee ID</b></mat-label>
+          <input matInput formControlName="empId" readonly>
+        </mat-form-field>
+
+        <mat-form-field class = "input-field" [appearance] = "userEdit ? 'standard' : 'none'">
+          <mat-label class="font-size"><b>Name</b></mat-label>
+          <input matInput formControlName="name" [readonly] = "!userEdit">
+        </mat-form-field>
+
+        <mat-form-field class = "input-field" appearance = "none">
+          <mat-label class="font-size"><b>Username</b></mat-label>
+          <input matInput formControlName="username" readonly>
+        </mat-form-field>
+
+        <mat-form-field class = "input-field" [appearance] = "userEdit ? 'standard' : 'none'">
+          <mat-label class="font-size"><b>Email</b></mat-label>
+          <input matInput formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field class = "input-field" [appearance] = "userEdit ? 'standard' : 'none'">
+          <mat-label class="font-size"><b>Phone Number</b></mat-label>
+          <input matInput formControlName="phone">
+        </mat-form-field>
+      </form>
+
+      <div class="button-container" *ngIf = "userEdit">
+        <button mat-raised-button color = "primary" (click) = "save()">Save</button>
+        <button mat-raised-button color = "secondary" class="button-margin" (click) = "userEdit = false">Cancel</button>
+      </div>
+    </div>
+  </mat-card>
+</section>

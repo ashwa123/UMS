@@ -1,0 +1,113 @@
+{
+  "Users": [
+    {
+      "empId": "1059745",
+      "username": "Admin",
+      "password": "Admin",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "designation": "Admin",
+      "phone": "7890654321",
+      "isAdmin": true,
+      "id": 0
+    },
+    {
+      "empId": "1059746",
+      "username": "ABC_345",
+      "password": "Joey",
+      "name": "Joey Tribbiani",
+      "email": "joey@gmail.com",
+      "designation": "Systems Engineer",
+      "phone": 9632587410,
+      "id": 1
+    },
+    {
+      "empId": "1059747",
+      "username": "Chan_123",
+      "password": "Chandler",
+      "name": "Chandler Bing",
+      "email": "chandlerbing@gmail.com",
+      "designation": "Systems Engineer",
+      "phone": "7708321983",
+      "id": 2
+    },
+    {
+      "empId": "1059748",
+      "username": "ROS_45",
+      "name": "Ross Geller",
+      "password": "Ross",
+      "email": "ross@gmail.com",
+      "designation": " Senior Systems Engineer",
+      "phone": 9510235754,
+      "id": 3
+    },
+    {
+      "empId": "1059748",
+      "username": "Asn_09",
+      "passowrd": "Racheal",
+      "name": "Racheal Green",
+      "email": "ras@gmail.com",
+      "designation": "Techonolgy Analyst",
+      "phone": 9751234952,
+      "id": 4
+    },
+    {
+      "empId": "1059749",
+      "username": "Mon_123",
+      "passowrd": "Monicca",
+      "name": "Monicca Geller",
+      "email": "mon@gmail.com",
+      "designation": "Operations Executive",
+      "phone": 9876543210,
+      "id": 5
+    },
+    {
+      "empId": "1059750",
+      "username": "Gun_123",
+      "passowrd": "Gunther",
+      "name": "Gunther",
+      "email": "gunther@gmail.com",
+      "designation": "Test Engineer",
+      "phone": 9876543210,
+      "id": 6
+    },
+    {
+      "empId": "1059751",
+      "username": "Mike_532",
+      "passowrd": "Mike",
+      "name": "Mike",
+      "email": "mike@gmail.com",
+      "designation": "Senior Systems Engineer",
+      "phone": 9786543012,
+      "id": 7
+    },
+    {
+      "empId": "1059752",
+      "username": "Jan_433",
+      "passowrd": "Janice",
+      "name": "Janice",
+      "email": "janice@gmail.com",
+      "designation": "Techonolgy Analyst",
+      "phone": 9871234560,
+      "id": 9
+    },
+    {
+      "empId": "1059753",
+      "username": "Emma_143",
+      "passowrd": "Emma",
+      "name": "Emma Geller",
+      "email": "emma@gmail.com",
+      "designation": "Operation Executive",
+      "phone": 7891235604,
+      "id": 10
+    },
+    {
+      "empId": "1059754",
+      "username": "demo",
+      "name": "Demo hello",
+      "email": "demo@gmail.com",
+      "phone": "7890654321",
+      "id": 11
+    }
+  ]
+}
